@@ -1,3 +1,6 @@
+# 把EOF之前的文字內容寫入 docker_ps.sh 檔案
+cat << 'EOF' > docker_ps.sh
+
 #!/bin/bash
 
 # 定義藍色粗體樣式
@@ -43,3 +46,7 @@ BODY_DATA=$(
     fi
 done
 
+EOF
+
+# 確保有執行權限
+chmod +x docker_ps.sh
