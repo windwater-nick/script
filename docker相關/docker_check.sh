@@ -124,7 +124,7 @@ while true; do
 
     # 如果是選項 2，先詢問路徑
     if [ "$choice" = "2" ]; then
-        read -p "請輸入目標目錄路徑 (例如 /srv/link/appdata): " input_dir
+        read -p "請輸入目標目錄路徑 (例如 /home/docker): " input_dir
         TARGET_DIR="${input_dir%/}"
         if [ -z "$TARGET_DIR" ]; then
             echo -e "\n⚠️ 輸入的路徑不可為空！\n"
