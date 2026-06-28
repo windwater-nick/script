@@ -1,3 +1,6 @@
+# 把EOF之前的文字內容寫入 docker_check.sh 檔案
+cat << 'EOF' > docker_check.sh
+
 #!/bin/bash
 
 # 定義歷史紀錄檔案名稱
@@ -167,3 +170,8 @@ while true; do
             ;;
     esac
 done
+
+EOF
+
+# 確保有執行權限
+chmod +x docker_check.sh
