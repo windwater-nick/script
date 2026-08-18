@@ -39,7 +39,7 @@ pip3 install requests pyyaml
 ```
 
 |檔案 |說明 |
-|:--|
+|:--|---|
 |`downloader.py` |主程式 |
 |`config.yaml` |程式設定 |
 |`soft-list.yaml` |軟體下載清單 |
@@ -66,7 +66,7 @@ github:
 
 ### Download 設定
 |設定 |說明 |預設值 |
-|:--|
+|:--|---|---|
 |`download.dir` |下載目錄 |`./download` |
 |`download.timeout` |單次下載 Timeout（秒） |`30` |
 |`download.show_progress` |是否顯示下載進度 |`true` |
@@ -75,7 +75,7 @@ github:
 
 ### GitHub 設定
 |設定 |說明 |預設值 |
-|:--|
+|:--|---|---|
 |`github.api_key` |GitHub API Token |無 |
 |`github.timeout` |GitHub API Timeout（秒） |`15` |
 
@@ -124,7 +124,7 @@ github:
 ### 欄位說明
 
 |欄位 |說明 |
-|:--|
+|:--|---|
 |`name` |軟體名稱，同時作為下載資料夾名稱 |
 |`repo` |GitHub Repository，例如 `pbatard/rufus` |
 |`include` |檔名必須包含其中任一字串 |
@@ -248,7 +248,7 @@ github:
 ## 錯誤處理
 程式針對常見 GitHub HTTP 狀態提供中文提示：
 |HTTP |說明 |
-|:--|
+|:--|---|
 |`401` |API Key / Token 無效或已過期 |
 |`403` |已達 API 存取次數限制 |
 |`404` |Repository 不存在或設為私有 |
