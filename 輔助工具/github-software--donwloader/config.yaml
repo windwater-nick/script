@@ -1,0 +1,19 @@
+# ==========================================
+# 下載相關設定 (Download Settings)
+# ==========================================
+download:
+  dir: /home/download
+  timeout: 30         # 下載逾時(秒)
+  show_progress: true # 顯示下載進度
+
+  # 重試機制 (Retry Policy)
+  retry:
+    count: 3        # 下載失敗重試次數
+    delay: 5        # 重試等待秒數
+
+# ==========================================
+# GitHub API 相關設定 (GitHub API Settings)
+# ==========================================
+github:
+  api_key:          # <your github api-key>
+  timeout: 15       # GitHub API 逾時(秒)
