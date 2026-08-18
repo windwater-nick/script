@@ -1,0 +1,34 @@
+# ---範例---
+
+- name: Rufus          # 名稱
+  repo: pbatard/rufus  # 倉庫名
+  include:             # 下載檔案包含字串
+    - "p.exe"
+  exclude:             # 下載檔案排除字串
+    - "x86"
+    - ".sig"
+
+- name: balenaEtcher
+  repo: balena-io/etcher
+  include:
+    - "win32"
+  exclude:
+    - ".rpm"
+    - ".deb"
+    - ".dmg"
+    - "Setup"
+    - "darwin"
+    - "arm"
+    - "linux"
+    - ".json"
+    - "code"
+
+- name: Ventoy
+  repo: ventoy/Ventoy
+  include:
+    - "windows"
+  exclude:
+    - "linux"
+    - ".txt"
+    - ".iso"
+    - "code"
